@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Entity to save bidder URLs in DB.
+ */
 @Entity
 @RequiredArgsConstructor
 @Getter

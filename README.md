@@ -1,6 +1,44 @@
 # TestProgramm
 
+This projekt is to test a BiddingServices.
 
+## Build
+
+Build is with maven.
+
+Build JAR:
+
+> mvn package
+
+Build docker image:
+
+> mvn docker:build
+
+Build package and docker image.
+
+> mvn package docker:build
+
+## Starting
+
+### Start with Docker
+
+Starting container with log in console
+
+> docker run -p 8080 -t bidservice/test
+
+Starting container as Daemon
+
+> docker run -p 8080 -d bidservice/test
+
+## Configuration
+
+Bidders could be configured over Post-Rest
+
+>http://localhost:8080/bidders
+
+and as body 
+
+>["http://localhost:8081","http://localhost:8082","http://localhost:8083"]
 
 Bidding system
 ==============
